@@ -32,7 +32,7 @@ int main(int argc, char **argv)
 		ft_strdel(&line);
 	}
 	printf("%i | %s", ret, line);
-	system("leaks fillit");
+	system("leaks get_next_line_shp");
 	close(fd);
 	return (0);
 }
