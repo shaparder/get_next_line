@@ -14,6 +14,7 @@
 #include "libft_shp/libft.h"
 #include <fcntl.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, char **argv)
 {
@@ -31,6 +32,7 @@ int main(int argc, char **argv)
 		ft_strdel(&line);
 	}
 	printf("%i | %s", ret, line);
+	system("leaks fillit");
 	close(fd);
 	return (0);
 }
